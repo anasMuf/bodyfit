@@ -1,0 +1,220 @@
+html,body{
+    overscroll-behavior: none;
+    height: 100% !important;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin-bottom: 0;
+}
+
+.bg{
+    background-image: url("/assets/img/bg.jpg");
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
+
+.navbar-bodyfit{
+    margin: 1rem;
+    background-color: #634529 !important;
+    border: 5px solid #000;
+    border-radius: 20px;
+}
+
+main{
+    padding: 0 1rem;
+    flex: 1;
+}
+
+.card{
+    background-color: #e1c7af;
+    border: 5px solid #634529;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+}
+.card > *{
+    padding: 10px;
+}
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #634529;
+}
+.card-action{
+    display: flex;
+    gap: 15px;
+    font-size: larger;
+}
+.card-body form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 1rem;
+}
+
+.btn{
+    border: 2px solid #333;
+}
+.btn-primary{
+    background-color: #634529;
+    color: #fff;
+}
+.btn-primary:hover{
+    background-color: #49331e;
+    border: 2px solid #333;
+}
+.btn-secondary{
+    background-color: #e1c7af;
+    color: #634529;
+}
+.btn-secondary:hover{
+    background-color: #bda690;
+    border: 2px solid #333;
+}
+
+header .card-body{    
+    height: 500px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.hero{
+    width: 500px;
+}
+.hero h1{
+    margin-bottom: 2rem;
+}
+
+section .card-body{
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+section .title{
+    margin-bottom: 2rem;
+}
+
+section#tentang .card-body{
+    min-height: 850px;
+}
+section#tentang .content{
+    max-width: 1000px;
+}
+section#introduction .card-body{
+    text-align: left;
+}
+.desc {
+    width: 100%;
+    position: relative;
+    z-index: 100;
+    text-align: center;
+}
+
+.about-img {
+    display: none;
+    width: 380px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.img{
+    border: 2.5px solid #634529;
+    border-radius: 10px;
+}
+.tentang-img{
+    width: 300px;
+}
+.gallery-img{
+    width: 400px;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.why-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.result{
+    margin-top: 1rem;
+}
+
+footer{
+    text-align: center;
+    margin: 1rem;
+    padding: 20px;
+    background-color: #634529;
+    border: 5px solid #000;
+    border-radius: 20px;
+    color: #fff;
+}
+
+/* style untuk layar dibawah 576px atau yang lebih kecil lagi tidak memakai meida query karena menerapkan prinsip mobile first */
+
+/* style untuk layar diatas 576px */
+@media (min-width: 576px) {
+
+}
+
+/* style untuk layar diatas 768px */
+@media (min-width: 768px) {
+    .swap-lg-2{
+        order: 2;
+    }
+    .swap-lg-1{
+        order: 1;
+    }
+    .why-text{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    .desc{
+        width: 60%;
+        text-align: left;
+    }
+    .about-img {
+        display: block;
+        width: 480px;
+    }
+
+    .navbar-bodyfit{
+        margin: 3rem;
+    }
+    main{
+        padding: 0 3rem;
+    }
+    footer{
+        margin: 3rem;
+    }
+}
+
+/* style untuk layar diatas 992px */
+@media (min-width: 992px) {
+
+}
+
+/* style untuk layar diatas 1200px */
+@media (min-width: 1200px) {
+
+}
+
+/* style untuk layar diatas 1400px */
+@media (min-width: 1400px) {
+
+}

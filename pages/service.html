@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BodyFit App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body class="bg">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-bodyfit">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">BodyFit</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/pages/service.html">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-secondary" href="/pages/register.html">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" id="BMI">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <h3>BMI</h3>
+                        </div>
+                        <div class="card-action" hidden>
+                            <span id="minimize">-</span>
+                            <span id="close">x</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                    <article class="mb-2">
+                            <div class="accordion" id="accordionBMI">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBMI" aria-expanded="true" aria-controls="collapseBMI">
+                                            Apa itu BMI (Body Mass Index)?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseBMI" class="accordion-collapse collapse" data-bs-parent="#accordionBMI">
+                                        <div class="accordion-body">
+                                            BMI adalah indikator pengukuran yang digunakan untuk menentukan kategori berat badan ideal atau tidak. Metode perhitungan ini juga bisa menjadi alat skrining untuk melihat risiko kesehatan tertentu. Menurut WHO, hasil BMI yang tidak normal/ideal akan meningkatkan risiko terkena beberapa penyakit. Maka dari itu, sekiranya Anda perlu memahami bagaimana cara menghitung BMI secara tepat untuk meminimalisir kenaikan atau penurunan berat badan secara berlebihan.
+                                            <a href="https://www.siloamhospitals.com/informasi-siloam/artikel/cara-menghitung-bmi#mcetoc_1gs4b7s9ibpo" target="_blank">Selengkapnya</a>   
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <form method="post" id="bmiForm">
+                            <label for="tinggi_badan">Tinggi Badan (CM)</label>
+                            <input type="number" name="tinggi_badan" id="tinggi_badan" class="form-control" placeholder="Tinggi Badan (CM)" min="1" step="1">
+                            <label for="berat_badan">Berat Badan (Kg)</label>
+                            <input type="number" name="berat_badan" id="berat_badan" class="form-control" placeholder="Berat Badan (Kg)" min="1" step="0.1">
+                        </form>
+                        <button type="submit" form="bmiForm" class="btn btn-primary">Submit</button>
+                        <div class="result" id="resultBMI">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" id="Calori">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <h3>Calori</h3>
+                        </div>
+                        <div class="card-action" hidden>
+                            <span id="minimize">-</span>
+                            <span id="close">x</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                    <article class="mb-2">
+                            <div class="accordion" id="accordionCalori">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCalori" aria-expanded="true" aria-controls="collapseCalori">
+                                            Pentingnya Mengetahui Kebutuhan Kalori Harian
+                                        </button>
+                                    </h2>
+                                    <div id="collapseCalori" class="accordion-collapse collapse" data-bs-parent="#accordionCalori">
+                                        <div class="accordion-body">
+                                            Mengapa kebutuhan kalori harian penting untuk diketahui? Perlu dipahami bahwa kalori berguna untuk menghasilkan energi bagi tubuh agar sel-sel dalam tubuh mampu bekerja dengan optimal. Kalori juga diperlukan agar organ-organ di dalam tubuh dapat menjalankan fungsinya secara normal. Selain itu, memahami kebutuhan kalori membantu menjaga keseimbangan energi, sehingga mencegah masalah kesehatan seperti kekurangan gizi atau kelebihan berat badan.
+                                            <a href="https://www.siloamhospitals.com/informasi-siloam/artikel/kebutuhan-kalori-harian#mcetoc_1ie3nmhtl2u" target="_blank">Selengkapnya</a>   
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <form method="post" id="caloriForm">
+                            <label for="jenis_kelamin">Jenis Kelamin</label>
+                            <select name="jenis_kelamin" id="jenis_kelamin" class="form-control">
+                                <option value="">.:: Pilih Jenis Kelamin ::.</option>
+                                <option value="l">Laki-laki</option>
+                                <option value="p">Perempuan</option>
+                            </select>
+                            <label for="umur">Umur</label>
+                            <input type="number" name="umur" id="umur" class="form-control" placeholder="Umur (tahun)" min="1" step="1">
+                            <label for="tinggi_badan">Tinggi Badan (CM)</label>
+                            <input type="number" name="tinggi_badan" id="tinggi_badan" class="form-control" placeholder="Tinggi Badan (CM)" min="1" step="1">
+                            <label for="berat_badan">Berat Badan (Kg)</label>
+                            <input type="number" name="berat_badan" id="berat_badan" class="form-control" placeholder="Berat Badan (Kg)" min="1" step="0.1">
+
+                            <label for="aktifitas">Aktifitas</label>
+                            <select name="aktifitas" id="aktifitas" class="form-control">
+                                <option value="">.:: Pilih Jenis Kelamin ::.</option>
+                                <option value="kurang_aktif">Kurang aktif (sangat jarang olahraga atau tidak pernah sama sekali)</option>
+                                <option value="aktif_ringan">Aktif ringan (rutin berolahraga ringan selama 1-3 hari dalam seminggu)</option>
+                                <option value="cukup_aktif">Cukup aktif (rutin berolahraga dengan intensitas sedang selama 3-5 hari dalam seminggu)</option>
+                                <option value="sangat_aktif">Sangat aktif (rutin berolahraga dengan intensitas berat selama 6-7 hari dalam seminggu)</option>
+                                <option value="aktif_aktif">Ekstra aktif (rutin berolahraga dengan intensitas berat selama 6-7 hari dalam seminggu dan melakukan pekerjaan yang membutuhkan stamina serta fisik kuat)</option>
+                            </select>
+                        </form>
+                        <button type="submit" form="caloriForm" class="btn btn-primary">Submit</button>
+                        <div class="result" id="resultCalori">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" id="HeartRate">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <h3>Heart Rate</h3>
+                        </div>
+                        <div class="card-action" hidden>
+                            <span id="minimize">-</span>
+                            <span id="close">x</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <article class="mb-2">
+                            <div class="accordion" id="accordionHeartRate">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHeartRate" aria-expanded="true" aria-controls="collapseHeartRate">
+                                            Teori Zona Pembakaran Lemak
+                                        </button>
+                                    </h2>
+                                    <div id="collapseHeartRate" class="accordion-collapse collapse" data-bs-parent="#accordionHeartRate">
+                                        <div class="accordion-body">
+                                            Teori zona pembakaran lemak membantu orang-orang menurunkan berat badan dengan memanfaatkan simpanan lemak tubuh, bukan glikogen. Teori ini menyebutkan bahwa tubuh membakar lebih banyak lemak dengan olahraga intensitas rendah dan bukan intensitas tinggi karena tubuh tidak butuh 'energi besar yang dihasilkan dalam waktu singkat' dari glikogen. Dengan demikian, teori ini menganjurkan olahraga kardio intensitas rendah untuk waktu yang lebih lama agar detak jantung Anda tetap dalam kisaran 'zona pembakaran lemak'.
+                                            <a href="https://www.mountelizabeth.com.sg/id/health-plus/article/fat-burning-zone-heart-rate-to-lose-fat" target="_blank">Selengkapnya</a>    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <form method="post" id="heartRateForm">
+                            <label for="umur">Umur</label>
+                            <input type="number" name="umur" id="umur" class="form-control" placeholder="Umur (tahun)" min="1" step="1">
+                        </form>
+                        <button type="submit" form="heartRateForm" class="btn btn-primary">Submit</button>
+                        <div class="result" id="resultHeartRate">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <h4>By Anas Mufti</h4>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <script src="/assets/script.js"></script>
+</body>
+</html>

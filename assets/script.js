@@ -74,7 +74,7 @@ function heartRate(data) {
     const fatburnMin = Math.round(maxHR*0.60);
     const fatburnMax = Math.round(maxHR*0.70);
 
-    resultHeartRate.innerHTML = `<p>hasilnya dari maximal heartrate anda ${maxHR} Bpm Fat burn zone anda harus berada pada ${ fatburnMin } -  ${fatburnMax} Bpm</p>`
+    resultHeartRate.innerHTML = `<p>hasilnya dari maksimal heartrate anda ${maxHR} Bpm Fat burn zone anda harus berada pada ${ fatburnMin } -  ${fatburnMax} Bpm</p>`
 }
 
 bmiForm.addEventListener('submit',function(e){

@@ -81,6 +81,11 @@ bmiForm.addEventListener('submit',function(e){
     e.preventDefault();
     const tinggi_badan = this.querySelector('#tinggi_badan').value;
     const berat_badan = this.querySelector('#berat_badan').value;
+
+    if(!tinggi_badan || !berat_badan){
+        return resultBMI.innerHTML = "<p>Salah Input</p>"
+    }
+    
     const data = {
         tinggi_badan: Number(tinggi_badan),
         berat_badan: Number(berat_badan)
@@ -95,6 +100,16 @@ caloriForm.addEventListener('submit',function(e){
     const tinggi_badan = this.querySelector('#tinggi_badan').value;
     const berat_badan = this.querySelector('#berat_badan').value;
     const aktifitas = this.querySelector('#aktifitas').value;
+
+    if(!tinggi_badan || 
+        !berat_badan ||
+        !jenis_kelamin ||
+        !umur ||
+        !aktifitas
+    ){
+        return resultBMI.innerHTML = "<p>Salah Input</p>"
+    }
+
     const data = {
         jenis_kelamin: jenis_kelamin,
         umur: Number(umur),
@@ -108,6 +123,11 @@ caloriForm.addEventListener('submit',function(e){
 heartRateForm.addEventListener('submit',function(e){
     e.preventDefault();
     const umur = this.querySelector('#umur').value;
+
+    if(!umur){
+        return resultBMI.innerHTML = "<p>Salah Input</p>"
+    }
+
     const data = {
         umur: Number(umur),
     };

@@ -77,9 +77,9 @@
                         </article>
                         <form method="post" id="bmiForm">
                             <label for="tinggi_badan">Tinggi Badan (CM)</label>
-                            <input type="number" name="tinggi_badan" id="tinggi_badan" class="form-control" placeholder="Tinggi Badan (CM)" min="1" step="1">
+                            <input type="number" name="tinggi_badan" id="tinggi_badan" class="form-control" placeholder="Tinggi Badan (CM)" min="1" step="1" required>
                             <label for="berat_badan">Berat Badan (Kg)</label>
-                            <input type="number" name="berat_badan" id="berat_badan" class="form-control" placeholder="Berat Badan (Kg)" min="1" step="0.1">
+                            <input type="number" name="berat_badan" id="berat_badan" class="form-control" placeholder="Berat Badan (Kg)" min="1" step="0.1" required>
                         </form>
                         <button type="submit" form="bmiForm" class="btn btn-primary">Submit</button>
                         <div class="result" id="resultBMI">
@@ -118,21 +118,21 @@
                         </article>
                         <form method="post" id="caloriForm">
                             <label for="jenis_kelamin">Jenis Kelamin</label>
-                            <select name="jenis_kelamin" id="jenis_kelamin" class="form-control">
+                            <select name="jenis_kelamin" id="jenis_kelamin" class="form-control" required>
                                 <option value="">.:: Pilih Jenis Kelamin ::.</option>
                                 <option value="l">Laki-laki</option>
                                 <option value="p">Perempuan</option>
                             </select>
                             <label for="umur">Umur</label>
-                            <input type="number" name="umur" id="umur" class="form-control" placeholder="Umur (tahun)" min="1" step="1">
+                            <input type="number" name="umur" id="umur" class="form-control" placeholder="Umur (tahun)" min="1" step="1" required>
                             <label for="tinggi_badan">Tinggi Badan (CM)</label>
-                            <input type="number" name="tinggi_badan" id="tinggi_badan" class="form-control" placeholder="Tinggi Badan (CM)" min="1" step="1">
+                            <input type="number" name="tinggi_badan" id="tinggi_badan" class="form-control" placeholder="Tinggi Badan (CM)" min="1" step="1" required>
                             <label for="berat_badan">Berat Badan (Kg)</label>
-                            <input type="number" name="berat_badan" id="berat_badan" class="form-control" placeholder="Berat Badan (Kg)" min="1" step="0.1">
+                            <input type="number" name="berat_badan" id="berat_badan" class="form-control" placeholder="Berat Badan (Kg)" min="1" step="0.1" required>
 
                             <label for="aktifitas">Aktifitas</label>
-                            <select name="aktifitas" id="aktifitas" class="form-control">
-                                <option value="">.:: Pilih Jenis Kelamin ::.</option>
+                            <select name="aktifitas" id="aktifitas" class="form-control" required>
+                                <option value="">.:: Pilih Aktifitas ::.</option>
                                 <option value="kurang_aktif">Kurang aktif (sangat jarang olahraga atau tidak pernah sama sekali)</option>
                                 <option value="aktif_ringan">Aktif ringan (rutin berolahraga ringan selama 1-3 hari dalam seminggu)</option>
                                 <option value="cukup_aktif">Cukup aktif (rutin berolahraga dengan intensitas sedang selama 3-5 hari dalam seminggu)</option>
@@ -177,7 +177,7 @@
                         </article>
                         <form method="post" id="heartRateForm">
                             <label for="umur">Umur</label>
-                            <input type="number" name="umur" id="umur" class="form-control" placeholder="Umur (tahun)" min="1" step="1">
+                            <input type="number" name="umur" id="umur" class="form-control" placeholder="Umur (tahun)" min="1" step="1" required>
                         </form>
                         <button type="submit" form="heartRateForm" class="btn btn-primary">Submit</button>
                         <div class="result" id="resultHeartRate">

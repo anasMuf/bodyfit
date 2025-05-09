@@ -59,10 +59,10 @@ function calori(data) {
         nominal_aktifitas = 1.9;
     }
 
-    calori = calori*nominal_aktifitas;
+    calori = Math.round(calori*nominal_aktifitas);
     resultCalori.innerHTML = `<p>
-        kalori normql harian = ${calori},<br>
-        kalori normql hariann cutting untuk diet = ${calori-500}
+        kalori normal harian = ${calori},<br>
+        kalori normal hariann cutting untuk diet = ${calori-500}
     </p>`;
 
 }

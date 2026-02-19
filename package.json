@@ -1,15 +1,24 @@
 {
-  "name": "bodyfit",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "api:dev": "pnpm run --filter=api dev",
-    "platform:dev": "pnpm run --filter=platform dev",
-    "dev": "pnpm --parallel --filter=api --filter=platform run dev"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@10.19.0"
+	"name": "bodyfit",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"api:dev": "pnpm run --filter=api dev",
+		"platform:dev": "pnpm run --filter=platform dev",
+		"dev": "pnpm --parallel --filter=api --filter=platform run dev",
+		"api:build": "pnpm run --filter=api build",
+		"platform:build": "pnpm run --filter=platform build",
+		"build": "pnpm --parallel --filter=api --filter=platform run build",
+		"lint": "pnpm exec biome check",
+		"lint:fix": "pnpm exec biome check --write --unsafe"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"packageManager": "pnpm@10.19.0",
+	"devDependencies": {
+		"@biomejs/biome": "2.4.2",
+		"husky": "^9.1.7"
+	}
 }
